@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MovieSent</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="container">
+		<h1>MovieSent – Dual Approach Sentiment Analysis</h1>
+		<textarea id="review" placeholder="Paste a movie review..."></textarea>
+		<div class="controls">
+			<select id="model">
+				<option value="lr">Logistic Regression</option>
+				<option value="lstm">LSTM</option>
+			</select>
+			<button id="analyze">Analyze</button>
+		</div>
+		<div id="result"></div>
+		<p class="hint">Start API: <code>python app/api.py</code>. The page expects API at <code>http://localhost:5000</code>.</p>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
